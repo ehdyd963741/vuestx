@@ -34,7 +34,9 @@ export default {
     const store = useStore();
     const ntdata = computed(()=> store.getters.getnoticeData);
     const nsdata = computed(()=> store.getters.getnewsData);
-
+    // vuex 의 action을 요청한다.
+    store.dispatch('fetchNews');
+    store.dispatch('fetchNotice');
   return {
     ntdata,
     nsdata

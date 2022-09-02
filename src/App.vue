@@ -33,6 +33,7 @@ import CsView from '@/components/CsView.vue';
 import AboutView from '@/components/AboutView.vue';
 import FooterView from '@/components/FooterView.vue';
 
+
 export default {
   name: 'App',
   components: {
