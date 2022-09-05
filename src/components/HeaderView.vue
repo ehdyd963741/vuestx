@@ -29,21 +29,21 @@
 
 <script>
 import $ from 'jquery';
-import { onMounted, computed } from 'vue';
+import { onUpdated, computed } from 'vue';
 import { useStore } from 'vuex';
 
 export default {
 
   setup() {
     const store = useStore();
-    const gnbdata = computed(()=> store.getters.getgnbData);
+    const gnbdata = computed(()=> store.getters.getGnbData);
     // vuex의 store의 action를 요청한다.
     store.dispatch('fetchGnb');
 
 
 
     // vue 에서 화면에 html 등록시 실행
-    onMounted( () => { 
+    onUpdated( () => { 
       // .header를 저장한다.
       let header = $('.header');
       let gnb = $('.gnb');

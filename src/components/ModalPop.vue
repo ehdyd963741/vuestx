@@ -18,17 +18,17 @@
 
 <script>
 import $ from 'jquery';
-import {onMounted} from 'vue';
+import {onUpdated} from 'vue';
 
 export default {
   setup() {
-    onMounted( () => {
+    onUpdated( () => {
       // 안내창 기능
       // 추가기능 : 스크롤바 없애기
       $('html').css('overflow', 'hidden');
-
         let modalWrap = $('.modal-wrap');
         let modalClose = $('.modal-close');
+
       modalClose.click(function(){
         modalWrap.stop().fadeOut(100);
         // 추가기능 : 스크롤바 살리기

@@ -17,10 +17,10 @@
 
 <script>
 import $ from 'jquery';
-import {onMounted} from 'vue';
+import {onUpdated} from 'vue';
 export default {
   setup() {
-    onMounted( () => {
+    onUpdated( () => {
       // 컨텐츠 이동 버튼
       let visualBt = $('.visual-bt');
       // .part 영역이 
