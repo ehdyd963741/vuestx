@@ -18,11 +18,11 @@
 
 <script>
 import $ from 'jquery';
-import {onUpdated} from 'vue';
+import {onMounted} from 'vue';
 
 export default {
   setup() {
-    onUpdated( () => {
+    onMounted( () => {
       // 안내창 기능
       // 추가기능 : 스크롤바 없애기
       $('html').css('overflow', 'hidden');
